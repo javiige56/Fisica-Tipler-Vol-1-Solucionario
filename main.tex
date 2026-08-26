@@ -1,6 +1,13 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+%\usepackage{siunitx}
+\pgfplotsset{compat=1.18}
 
 \title{Física Tipler Vol 1 Solucionario}
 \author{Javier Villanueva Gervaso}
@@ -28,6 +35,159 @@
     \\
     El objeto describe un movimiento de caída libre. Consideramos dicho movimiento desde que es lanzado verticalmente hacia arriba (para $t=t_0=0$ e $y_0=0$) hasta que vuelve a caer en el mismo sitio donde ha sido lanzado (para $t=t_1$ e $y_1=0$). Aplicando la fórmula de la velocidad media
     $$v_m=\frac{\Delta y}{\Delta t}=\frac{y_1-y_0}{t_1-t_0}=\frac{0-0}{t_1-0}=0 \,m/s$$
+
+    \item Un objeto lanzado verticalmente hacia arriba vuelve al suelo $T$ segundos más tarde. Su altura máxima es $H$ metros y su altura en el momento de soltarlo es despreciable. También es despreciable la resistencia del aire. El módulo de la velocidad durante estos $T$ segundos es:
+
+    \begin{enumerate}
+        \item $H/T$
+        \item $0$ 
+        \item $H/(2T)$
+        \item $2H/T$
+    \end{enumerate}
+
+    \textbf{Respuesta correcta.} d)
+
+    \item Usando la información del problema anterior, ¿cuál es el módulo de la velocidad media durante la primera mitad del recorrido? ¿Cuál es el módulo de la velocidad media durante la segunda mitad del recorrido? (Dar la respuesta en función en función de $H$ y $T$)
+
+    \textbf{Respuesta}
+
+    \item Dibuje las gráficas posición-tiempo, velocidad-tiempo y aceleración-tiempo en un período $t \in [0,30]$ para un automóvil que se mueve a velocidad constante de $5m/s$ en la dirección $+x$ y pasa por el origen cuanto $t=0,0s$. Durante $5,0s$ sigue a $5m/s$, después acelera durante $10,0s$ a una tasa de $0,50m/s^2$. A partir de entonces, el automóvil pierde velocidad a una tasa de $0,50 m/s$ durante los $15,0$ segundos restantes.
+
+    \textbf{Respuesta}
+    \\
+    El automóvil parte del origen con una velocidad inicial de
+    \[
+    v_0=5\,\mathrm{m/s}.
+    \]
+
+    El movimiento se divide en tres etapas:
+
+    \begin{itemize}
+    \item $0\leq t\leq5$: velocidad constante.
+    \item $5<t\leq15$: aceleración constante de $0.50\,\mathrm{m/s^2}$.
+    \item $15<t\leq30$: desaceleración constante de $-0.50\,\mathrm{m/s^2}$.
+    \end{itemize}
+
+    Realizando los cálculos
+
+\subsubsection*{1. Aceleración}
+
+La aceleración es constante en cada etapa:
+
+\[
+a(t)=
+\begin{cases}
+0, & 0\leq t\leq5,\\[4pt]
+0.50, & 5<t\leq15,\\[4pt]
+-0.50, & 15<t\leq30.
+\end{cases}
+\]
+
+La gráfica es:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$a$ (m/s$^2$)},
+    xmin=0, xmax=30,
+    ymin=-0.7, ymax=0.7,
+    grid=major,
+    axis lines=left,
+    legend pos=south west
+]
+\addplot[domain=0:5, samples=2] {0};
+\addplot[domain=5:15, samples=2] {0.5};
+\addplot[domain=15:30, samples=2] {-0.5};
+
+\addplot[only marks, mark=*] coordinates {
+    (0,0) (5,0) (15,0.5) (30,-0.5)
+};
+
+\legend{Etapa 1, Etapa 2, Etapa 3}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{2. Velocidad}
+
+La función velocidad es
+
+\[
+v(t)=
+\begin{cases}
+5, & 0\leq t\leq5,\\[4pt]
+0.5t+2.5, & 5<t\leq15,\\[4pt]
+-0.5t+17.5, & 15<t\leq30.
+\end{cases}
+\]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$v$ (m/s)},
+    xmin=0, xmax=30,
+    ymin=0, ymax=11,
+    grid=major,
+    axis lines=left,
+    legend pos=north west
+]
+\addplot[domain=0:5, samples=2] {5};
+\addplot[domain=5:15, samples=100] {5+0.5*(x-5)};
+\addplot[domain=15:30, samples=100] {10-0.5*(x-15)};
+
+\addplot[only marks, mark=*] coordinates {
+    (0,5) (5,5) (15,10) (30,2.5)
+};
+
+
+\legend{Etapa 1, Etapa 2, Etapa 3}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+    \subsubsection*{3. Posición}
+
+\[
+x(t)=
+\begin{cases}
+5t, & 0\leq t\leq5,\\
+0.25t^2+2.5t+6.25, & 5<t\leq15,\\
+-0.25t^2+17.5t-106.25, & 15<t\leq30.
+\end{cases}
+\]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$x$ (m)},
+    xmin=0, xmax=30,
+    ymin=0, ymax=210,
+    grid=major,
+    axis lines=left,
+    legend pos=north west
+]
+\addplot[domain=0:5, samples=100] {5*x};
+\addplot[domain=5:15, samples=100] {25+5*(x-5)+0.25*(x-5)^2};
+\addplot[domain=15:30, samples=100] {100+10*(x-15)-0.25*(x-15)^2};
+
+\addplot[only marks, mark=*] coordinates {
+    (0,0) (5,25) (15,100) (30,193.75)
+};
+
+\legend{Etapa 1, Etapa 2, Etapa 3}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
 \end{enumerate}
 
 \end{document}
