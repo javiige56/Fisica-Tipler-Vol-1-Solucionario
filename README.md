@@ -10,9 +10,9 @@ Editorial: Reverté
 ## Descripción del repositorio
 
 El repositorio presente incluye los siguientes archivos:
---README.md: Se trata de una guía.
---main.tex: Archivo .tex que incluye el código fuente de las soluciones de los ejercicios.
---main.pdf: Es el archivo .pdf que se obtiene al compilar el archivo .tex anterior. Es el archivo principal, pues en él se podrán ver todos los ejercicios resueltos a detalle en formato .pdf.
+-README.md: Se trata de una guía.
+-main.tex: Archivo .tex que incluye el código fuente de las soluciones de los ejercicios.
+-main.pdf: Es el archivo .pdf que se obtiene al compilar el archivo .tex anterior. Es el archivo principal, pues en él se podrán ver todos los ejercicios resueltos a detalle en formato .pdf.
 
 ## Ramas
 
