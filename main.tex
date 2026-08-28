@@ -122,7 +122,87 @@
 	\end{enumerate}
 	
 	\textbf{Respuesta correcta:} Entre 90 y 180 grados.
-    
+
+	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $x$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $				\overrightarrow{B}+\overrightarrow{A}$ señale en la dirección positiva del eje $y$.
+
+	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $y$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $				\overrightarrow{B}-\overrightarrow{A}$ señale en la dirección positiva del eje $x$.
+
+	\item (\textbf{Interesante}) ¿Es posible que tres vectores del mismo módulo sumen 0? Si lo es, muestre la respuesta gráficamente. En caso contrario, explique por qué no es posible.
+
+	\textbf{Respuesta}
+	Sí, es posible.
+
+	Sin pérdida de generalidad, podemos suponer que el módulo de los tres vectores es 1. Supongamos que estos vectores existen. En tal caso, podemos escribirlos como
+
+	$$
+	v_i=(\cos\alpha_i,\sin\alpha_i),\qquad i=1,2,3.
+	$$
+
+	Tomamos (poner $v_3=(-1,0)$ y resolver el sistema de ecuaciones que aparece al plantear $v_1+v_2+v_3=0$ con $\alpha_1=-\alpha_2$ y usando las simetrías de seno y coseno)
+
+	$$
+	\alpha_1=\frac{\pi}{3},\qquad
+	\alpha_2=-\frac{\pi}{3},\qquad
+	\alpha_3=\pi.
+	$$
+
+	Entonces,
+
+	$$
+	v_1=\left(\frac12,\frac{\sqrt3}{2}\right),
+	\qquad
+	v_2=\left(\frac12,-\frac{\sqrt3}{2}\right),
+	\qquad
+	v_3=(-1,0).
+	$$
+
+	Los tres vectores tienen módulo (1), ya que
+
+	$$
+	|v_i|=\sqrt{\cos^2\alpha_i+\sin^2\alpha_i}=1.
+	$$
+
+	Además,
+
+	$$
+	\left(\frac12+\frac12-1,
+	\frac{\sqrt3}{2}-\frac{\sqrt3}{2}\right)
+	=(0,0).
+	$$
+
+	Por tanto,
+
+	$$
+	v_1+v_2+v_3=0
+	$$
+
+	y queda demostrado que sí es posible que tres vectores del mismo módulo sumen cero.
+
+	\section{Cálculo y aproximaciones}
+
+	\item El ángulo subtendido por el diámetro de la Luna en un punto de la Tierra es aproximadamente $\theta=0,524º$. Con este dato, y sabiendo que la Luna dista $384Mm$ de la Tierra, hallar su diámetro. (El ángulo $\theta$ subtenido por la Luna es, 	aproximadamente, igual a $D/r_1$, donde $D$ es el diámetro de la Luna y $r_1$ es la distancia a la misma.)
+
+	\textbf{Respuesta}
+	Basta con despejar $D$ en la igualdad
+	$$\theta=\frac{D}{r_1}$$
+	Por tanto
+	$$D=r_1\cdot \theta=384 Mm \cdot 0,00914=3,509 Mm=3, 509 \times 10^6 m$$
+	Donde hemos pasado el ángulo $\theta$ a radianes
+	$$0,524º \cdot \frac{\pi rad}{180º}=0,00914 rad$$
+	
+	\item Si se supone que el cuerpo humano está formado esencialmente de agua, se puede hacer una sencilla estimación. La masa de una molecula de agua es $29,9 \times 10^{-27}$kg. Estimar las moléculas de agua que forman una persona de $60$ 		kg de masa.
+
+	\textbf{Respuesta}
+	Basta con hacer la siguiente división, si llamamos $N$ al número de moléculas buscado
+	$$N=\frac{60}{29,9 \times 10^{-27}}=2 \times 10^{27}$$
+
+	\item En 1989, científicos de la compañia IBM consiguieron mover átomos con un microscopio de barrido de efecto tunel (STM). El público pudo apreciar esta tecnología cuando vio las letras IBM formadas a partir de átomos de xenon sobre una superficie de niquel. Las letras IBM se extendían a una distancia que equivalía a unos 15 átomos de xenon. Si el espacio entre los centros de los átomos de xenon adyacentes es de 5 $nm$ ($5 \times 10^{-9}$m), estimar cuántas veces puede escribirse la palabra "IBM" en una página de 21,6 cm de ancho.
+
+	\textbf{Respuesta}
+	
+
+
+
 \end{enumerate}
 
 \end{document}
