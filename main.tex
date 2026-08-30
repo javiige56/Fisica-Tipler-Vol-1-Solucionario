@@ -45,11 +45,28 @@
         \item $2H/T$
     \end{enumerate}
 
-    \textbf{Respuesta correcta.} d)
+    \textbf{Respuesta correcta.} d). El contexto del problema es el mismo del ejercicio anterior, en este caso se pide el módullo de la velocidad media
+	$$modulo de la velocidad media = \frac{distancia total}{\Delta t}=\frac{H+H}{T}=\frac{2H}{T}$$
 
     \item Usando la información del problema anterior, ¿cuál es el módulo de la velocidad media durante la primera mitad del recorrido? ¿Cuál es el módulo de la velocidad media durante la segunda mitad del recorrido? (Dar la respuesta en función en función de $H$ y $T$)
 
     \textbf{Respuesta}
+	
+     De nuevo, el contexto es el mismo que el del ejercicio anterior. Consideramos los intervalos de tiempo $[t_0,t_1]$ y $[t_1,t_2]$ donde $t_0=0$ (tiempo en el que se lanza el objeto), $t_1$ (tiempo en el que se alcanza la altura máxima), $t_2=T$ (tiempo en el que vuelve al suelo). También consideramos las alturas $y_i=y(t_i)$. Calculemos el módulo de la velocidad media para cada tramo. Necesitamos saber el valor de $t_1$ previamente. Las ecuaciones del movimiento son
+$$\begin{cases}
+y=v_0t-\frac{1}{2}gt^2 \\
+v=v_0-gt
+\end{cases}$$
+Como $y(T)=0$
+$$y(T)=v_0T-\frac{1}{2}gT^2=0 \Rightarrow v_0=\frac{gT}{2}$$
+Por otro lado, como $v(t_1)=0$
+$$v(t_1)=v_0-gt_1=0 \Rightarrow t_1=\frac{T}{2}$$
+Y así
+$$r_1=\frac{y_1-y_0}{t_1-t_0}=\frac{H-0}{T/2-0}=\frac{2H}{T}$$
+$$r_2=\frac{y_2-y_1}{t_2-t_1}=\frac{0-H}{T-T/2}=-\frac{2H}{T}$$
+
+
+
 
     \item Dibuje las gráficas posición-tiempo, velocidad-tiempo y aceleración-tiempo en un período $t \in [0,30]$ para un automóvil que se mueve a velocidad constante de $5m/s$ en la dirección $+x$ y pasa por el origen cuanto $t=0,0s$. Durante $5,0s$ sigue a $5m/s$, después acelera durante $10,0s$ a una tasa de $0,50m/s^2$. A partir de entonces, el automóvil pierde velocidad a una tasa de $0,50 m/s$ durante los $15,0$ segundos restantes.
 
