@@ -65,10 +65,36 @@ Y así
 $$r_1=\frac{y_1-y_0}{t_1-t_0}=\frac{H-0}{T/2-0}=\frac{2H}{T}$$
 $$r_2=\frac{y_2-y_1}{t_2-t_1}=\frac{0-H}{T-T/2}=-\frac{2H}{T}$$
 
+	\item Dé un ejemplo de la vida cotidiana de un movimiento en una dimensión donde (a) la velocidad sea positiva y la aceleración sea negativa, y (b) donde la velocidad sea positiva y la aceleración sea positiva.
 
+	\textbf{Respuesta}
+	(a) Un coche en movimiento que comienza a frenar frente a un obstáculo. (b) Un coche en movimiento que comienza a acelerar
 
+	\item Póngase en el centro de una habitación espaciosa...
 
-    \item Dibuje las gráficas posición-tiempo, velocidad-tiempo y aceleración-tiempo en un período $t \in [0,30]$ para un automóvil que se mueve a velocidad constante de $5m/s$ en la dirección $+x$ y pasa por el origen cuanto $t=0,0s$. Durante $5,0s$ sigue a $5m/s$, después acelera durante $10,0s$ a una tasa de $0,50m/s^2$. A partir de entonces, el automóvil pierde velocidad a una tasa de $0,50 m/s$ durante los $15,0$ segundos restantes.
+	\item Verdadero o falso: El desplazamiento \textit{siempre} es igual al producto de la velocidad media por el tiempo. Explique la respuesta.
+	
+	\textbf{Respuesta}
+
+	Verdadero. En virtud de la fórmula de la velocidad media
+	$$v_{m,x}=\frac{\Delta x}{\Delta t}$$
+	Despejando el desplazamiento
+	$$\Delta x = v_{m,x} \cdot \Delta t$$
+	Es decir, el desplazamiento se obtiene como el producto de la velocidad media por el tiempo.
+
+	\item Verdadero o falso. Para que la velocidad sea constante, la aceleración \textit{debe ser} cero. Explique la respuesta.
+
+	\textbf{Respuesta}
+
+	Verdadero. Si consideramos velocidad vectorial es constante, tenemos que
+	$$\Delta \vec{v}=0$$
+	Como
+	$$\vec{a}=\frac{\Delta \vec{v}}{\Delta \vec{t}}$$
+	Se deduce que $\vec{a}=0$.
+	\\
+	Nota: Si consideramos otro movimiento, como el movimiento circular uniforme, en las hipótesis anteriores (velocidad constante), la aceleración (centrípeta) no es cero.	
+
+    \item Dibuje cuidadosamente los gráficos que representan la posición-tiempo, velocidad-tiempo y aceleración-tiempo en un período $t \in [0,30]$ para un automóvil que se mueve a velocidad constante de $5m/s$ en la dirección $+x$ y pasa por el origen cuanto $t=0,0s$. Durante $5,0s$ sigue a $5m/s$, después acelera durante $10,0s$ a una tasa de $0,50m/s^2$. A partir de entonces, el automóvil pierde velocidad a una tasa de $0,50 m/s$ durante los $15,0$ segundos restantes.
 
     \textbf{Respuesta}
     \\
@@ -204,6 +230,65 @@ x(t)=
 \end{axis}
 \end{tikzpicture}
 \end{center}
+
+	\item Verdadero o falso: La velocidad media siempre se calcula como la semisuma de las velocidades final e inicial. Explique la respuesta.
+
+	\textbf{Respuesta:} Falso. Se pide verificar si la igualdad
+	$$v_{m,x}=\frac{v_f+v_i}{2}$$
+	Es cierta siempre. En este caso, la igualdad anterior se cumple para algunos casos, pero no para otros. Veamos un ejemplo de cada
+
+	\begin{itemize}
+		\item Caso en el que \textbf{sí} cumple la fórmula. Movimiento rectilíneo y uniformemente acelerado
+		$$\begin{cases}
+			v(t)=v_0+at \\
+			x(t)=x_0+v_0t+\frac{1}{2}at^2
+		\end{cases}$$
+		Para el intervalo de tiempo $[t_i,t_f]$. Por tanto, $x_i=x(t_i) \, x_f=x(t_f)$ y podemos calcular la velocidad media como
+		$$v_{m,x}=\frac{x_f-x_i}{t_f-t_i}=\frac{x_0+v_0t_f+\frac{1}{2}at_f^2- \left (x_0+v_0t_i+\frac{1}{2}at_i^2 \right)}{t_f-t_i}=$$
+		$$\frac{v_0(t_f-t_i)+\frac{1}{2}a(t_f^2-t_i^2)}{t_f-t_i}=v_0+\frac{1}{2}a(t_f+t_i)$$
+		Por otro lado
+		$$\frac{v_i+v_f}{2}=\frac{v_0+at_i+v_0+at_f}{2}=v_0+\frac{1}{2}a(t_i+t_f)$$
+
+		\item Caso en el que \textbf{no} se cumple la fórmula. Aceleración no constante y con discontinuidad de salto finito en su gráfica. Pongamos el intervalo de tiempo $[t_i,t_f]=[0,2]$ y valores iniciales de posición y velocidad $x_0=0$ y $v_0=0$ y las ecuaciones de aceleración, velocidad y tiempo:
+		$$a(t)=\begin{cases}
+		2 & t \in [0,1], \\
+		3 & t \in (1,2]
+		\end{cases}
+		$$
+		$$v(t)=\begin{cases}
+		2t & t \in [0,1], \\
+		3t-1 & t \in (1,2]
+		\end{cases}
+		$$
+		$$x(t)=\begin{cases}
+		t^2 & t \in [0,1], \\
+		\frac{3}{2}t^2-t+\frac{1}{2} & t \in (1,2]
+		\end{cases}
+		$$
+		Así, la velocidad media es
+		$$v_{m,x}=\frac{\Delta x}{\Delta t}=\frac{x(2)-x(0)}{2-0}=\frac{\frac{3}{2}\cdot 2^2-2+\frac{1}{2}-0^2}{2-0}=\frac{9}{4} m/s$$
+		Y la semisuma de las velocidades inicial y final es
+		$$\frac{v_f+v_i}{2}=\frac{v(2)+v(0)}{2}=\frac{3\cdot 2-1}{2}=\frac{5}{2} m/s$$
+		Resultados diferentes.
+	
+	\end{itemize}
+
+	\item Dos hermanos gemelos idénticos lanzan simultáneamente dos piedras al agua desde un puente horizontal. Una piedra llega al agua antes que la otra. ¿Puede darse esta situación? Explique qué es lo que han hecho diferente. Ignore los efectos de la 	    resistencia del aire.
+
+	\textbf{Respuesta} Sí, se puede dar esa situación, por ejemplo, si uno de los dos hermanos lanza verticalmente y hacia abajo la piedra con un velocidad inicial mayor (en valor absoluto) que la velocidad inicial de la piedra con la que el otro hermano la lanza verticalmente y hacia abajo.
+
+	\item El Dr. Josiah S. Carberry está en lo alto de la torre Sears en Chicago. Con el objetivo de emular a Galileo, e ignorando la seguridad de los peatones que se mueven en la zona cercana a la base del edificio, suelta una bola desde lo más alto del edificio. Un segundo más tarde suelta una segunda bola. Mientras las bolas están en el aire, su separación (a) aumenta con el tiempo, (b) disminuye, o (c) se mantiene constante? Ignórense los efectos de la resistencia del aire.
+
+	\textbf{Respuesta}
+
+	El intervalo de tiempo con el que trabajamos es $[1,T]$ donde $t_0=0$ (tiempo en el que se suelta la primera bola), $t_1=1s$ (tiempo en el que se suelta la segunda bola) y $t_2=T$ (tiempo en el que la primera bola llega al suelo). Las ecuaciones de la altura de cada bola sol
+	$$\begin{cases}
+	y_1(t)=h-\frac{gt^2}{2} \\
+	y_2(t)=h-\frac{g(t-1)^2}{2}
+	\end{cases}$$
+	Definimos la función \textit{distancia entre bolas} como $d(t)=|y_1(t)-y_2(t)|$. El problema se reduce a estudiar si la función $d(t)$ es creciente, decreciente o constante en el intervalo $[1,T]$. 
+	$$d(t)=\left| h-\frac{gt^2}{2}-h+\frac{g(t-1)^2}{2} \right|=\left | \frac{g}{2}(2t-1) \right|=\frac{g}{2}(2t-1) \quad \text{ creciente para $t \geq 1$}$$
+	Luego la respuesta correcta es la (a) aumenta con el tiempo.
 
 \end{enumerate}
 
