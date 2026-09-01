@@ -2,10 +2,10 @@
 
 ## Libro con el que se trabaja
 
-Título: Física para la ciencia y tecnología. Volumen 1 Mecánica/Oscilaciones y Ondas/Termodinámica
-Autores: Paul Tipler y Gene Mosca
-Edición: Sexta
-Editorial: Reverté
+Título: Física para la ciencia y tecnología. Volumen 1 Mecánica/Oscilaciones y Ondas/Termodinámica. \\
+Autores: Paul Tipler y Gene Mosca. \\
+Edición: Sexta. \\
+Editorial: Reverté. 
 
 ## Descripción del repositorio
 
