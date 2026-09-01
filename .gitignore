@@ -1,0 +1,15 @@
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+
+# Archivos PDF generados
+#*.pdf
+
+# Carpeta de salida
+out/
