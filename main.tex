@@ -46,7 +46,7 @@
     \end{enumerate}
 
     \textbf{Respuesta correcta.} d). El contexto del problema es el mismo del ejercicio anterior, en este caso se pide el módullo de la velocidad media
-	$$modulo de la velocidad media = \frac{distancia total}{\Delta t}=\frac{H+H}{T}=\frac{2H}{T}$$
+	$$\text{modulo de la velocidad media} = \frac{\text{distancia total}}{\Delta t}=\frac{H+H}{T}=\frac{2H}{T}$$
 
     \item Usando la información del problema anterior, ¿cuál es el módulo de la velocidad media durante la primera mitad del recorrido? ¿Cuál es el módulo de la velocidad media durante la segunda mitad del recorrido? (Dar la respuesta en función en función de $H$ y $T$)
 
@@ -289,6 +289,106 @@ x(t)=
 	Definimos la función \textit{distancia entre bolas} como $d(t)=|y_1(t)-y_2(t)|$. El problema se reduce a estudiar si la función $d(t)$ es creciente, decreciente o constante en el intervalo $[1,T]$. 
 	$$d(t)=\left| h-\frac{gt^2}{2}-h+\frac{g(t-1)^2}{2} \right|=\left | \frac{g}{2}(2t-1) \right|=\frac{g}{2}(2t-1) \quad \text{ creciente para $t \geq 1$}$$
 	Luego la respuesta correcta es la (a) aumenta con el tiempo.
+
+	\item ¿Cual de las curvas posición-tiempo de la figura 2.28...
+
+	\item ¿Cuál de las curvas velocidad-tiempo de la figura 2.29...
+
+	\item El diagrama de la figura 2.30...
+
+	\item Un objeto se mueve a largo del eje $x$ como indica la figura 2.30...
+
+	\item En cada uno de los cuatro gráficos de $x$ en función de $t$ de la figura 2.31...
+	
+	\item Verdadero o falso:
+
+	\begin{enumerate}
+		\item Si la aceleración es cero, la partícula no puede estar moviéndose.
+
+		\item Si la aceleración es cero, la curva $x$ en función de $t$ es una línea recta.
+
+		\item Si la aceleración es distinta de cero en un instante, en ese instante el objeto puede estar en reposo.
+		Explicar los argumentos para cada respuesta. Si la respuesta es \textit{verdadero}, dar un ejemplo.
+
+	\end{enumerate}
+
+	\textbf{Respuesta}
+
+	\begin{enumerate}
+		\item \textbf{Falso}. Considera un movimiento de velocidad constante $v=v_0=5m/s$. Tenemos que la aceleración es cero, pero a pesar de ello la particula se mueve con velocidad constante.
+
+		\item \textbf{Verdadero}. En virtud de las igualdades entre las ecuaciones de posición, velocidad y tiempo:
+		$$a=\frac{dv}{dt}, \quad v=\frac{dx}{dt}$$
+		Tenemos
+		$$v(t)= \int a(t) dt= \int 0 dt= v_0$$
+		Por otro lado
+		$$x(t)=\int v(t)dt = \int v_0 dt= x_0+v_0t$$
+		Es decir, la ecuación de la posición es una recta.
+
+		\item \textbf{Verdadero}. El siguiente movimiento en el instante $t_1=1s$ cumple que la aceleración es no nula y que está en reposo.
+		$$v(t)=2t-2$$
+		En efecto
+		$$a(1)=v'(1)=2 \neq 0 \quad, v(1)=2 \cdot 1-2=0$$
+		Es decir, en el instante $t=t_1=1s$ la aceleración es positiva pero el cuerpo está en reposo.
+	\end{enumerate}
+
+	\item Una pelota de tenis se mueve horizontalmente cuando golpea contra una pared vertical de hormigón de un frontón con incidencia perpendicular y rebota. Desprecie cualquier efecto debido a 		 gravedad durante el breve intervalo de tiempo de rebote. Suponga que la dirección hacia la pared es positiva $+x$. ¿Cuáles son las direcciones de velocidad y de la aceleración: (a) inmediatamente 	antes de chocar con la pared, (b) en el momento del choque y, (c) inmediatamente después del choque?
+
+	\textbf{Respuesta}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Momento} & \textbf{Velocidad} & \textbf{Aceleración} \\ \hline
+
+(a) Inmediatamente antes del choque 
+& $\vec{v}$ apunta hacia $+x$
+& $\vec{a}=\vec{0}$ \\ \hline
+
+(b) Durante el choque 
+& $\vec{v}$ cambia de $+x$ a $-x$
+& $\vec{a}$ apunta hacia $-x$ \\ \hline
+
+(c) Inmediatamente después del choque 
+& $\vec{v}$ apunta hacia $-x$
+& $\vec{a}=\vec{0}$ \\ \hline
+
+\end{tabular}
+\end{table}
+
+	\item Se lanza una pelota verticalmente hacia arriba. Despreciar cualquier efecto debido a la resistencia del aire. (a) ¿Cuál es su velocidad en el punto más alto de su movimiento? (b) ¿Cuál es la aceleración en ese punto? (c) ¿Qué es diferente respecto a la velocidad y la aceleración en el punto más alto si la bola rebota y choca contra el techo?
+
+	\textbf{Respuesta}
+
+	(a) La velocidad en el punto más alto del movimiento es cero. (b) La aceleración en el punto más alto del movimiento es $-g$. (c) La aceleración en módulo es mayor que $g$ mientras la bola está 		     en contacto con el techo.
+
+	\item Se lanza hacia arriba un objeto desde el suelo, alcanza una altura $H$ y cae $T$ segundos más tarde en el mismo sitio desde donde había salido. Despreciar cualquier efecto debido a la resistencia del aire. (a) Expresar el módulo de la velocidad media para todo el recorrido en función de $H$ y $T$. (b) Expresar el módulo de la velocidad media para el mismo intervalo de tiempo en función de la velocidad inicial $v_0$.
+	
+	\textbf{Respuesta}
+
+	\begin{enumerate}
+
+		\item Mismo contexto que el ejercicio 2. 
+		$$\text{modulo de la velocidad media}= \frac{2H}{T}$$
+		En función de $H$ y de $T$.
+
+		\item Tenemos que obtener $H, T$ en función de $v_0$. Para ello, sabemos que las ecuaciones del movimiento del problema son
+		$$\begin{cases}
+			y(t)=v_0t-\frac{1}{2}gt^2 \\
+			v(t)=v_0-gt
+		\end{cases}$$
+		Con los datos $y(T)=0$ y que $H$ es la altura máxima . Por tanto
+		$$y(T)=v_0T-\frac{1}{2}gT^2=0 \Rightarrow T=\frac{2v_0}{g}$$
+		Además, se puede deducir que $y\left( \frac{T}{2} \right)=H$ (haciendo $v(t)=0$ pues se cumple para $y(T)=H$). Luego
+		$$y \left ( \frac{T}{2} \right)=v_0\cdot \frac{T}{2}-\frac{1}{2}g (T/2)^2=H \Rightarrow H=\frac{v_0^2}{2g}$$
+		Así
+		$$\text{modulo de la velocidad media}=\frac{2\cdot H}{T}=\frac{2 \cdot \left ( \frac{v_0^2}{2g} \right)}{ \frac{2v_0}{g}}=\frac{v_0}{2}$$
+
+
+	\end{enumerate}
+
+
 
 \end{enumerate}
 
