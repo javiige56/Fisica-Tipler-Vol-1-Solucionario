@@ -388,7 +388,144 @@ x(t)=
 
 	\end{enumerate}
 
+	\item Se lanza hacia arriba una pequeña bola de plomo. Verdadero o falso: (Despreciar cualquier efecto debido a la resistencia del aire.) (a) El módulo de su aceleración disminuye durante el camino ascendente. (b) La dirección de su aceleración cuando va hacia arriba es opuesta a la dirección de la aceleración cuando cae de vuelta. (c) La dirección de la velocidad cuando cae es opuesta a la dirección de la velocidad cuando la bola está subiendo
 
+	\textbf{Respuesta}
+	
+	\begin{enumerate}
+		\item \textbf{Falso}. El módulo de la aceleración siempre es constante $|a|=g$
+
+		\item \textbf{Falso}. El sentido de la aceleracion es siempre el sentido negativo del eje $Y$ ($-\vec{j}$).
+
+		\item \textbf{Verdadero}. Cuando sube, el sentido de la velocidad es $+\vec{j}$; cuando baja, en cambio, el sentido de la velocidad es $-\vec{j}$.
+	\end{enumerate}
+
+	\item En el instante $t=0$, un objeto $A$ se deja caer desde el tejado de una casa. En el mismo instante, otro objeto $B$ se deja caer desde una ventana a $10$m por debajo del tejado. La resistencia del aire es despreciable. Durante el descenso de $B$ al suelo, la distancia entre los dos objetos. (a) es proporcional a $t$, (b) es proporcional a $t^2$, (c) decrece, (d) permanece igual a $10$m constantemente.
+
+	\textbf{Respuesta}
+	
+	(d). Sea $H$ la altura del tejado respecto al suelo. Las ecuaciones de la posición para los objetos $A$ y $B$ son $y_A(t)=H-\frac{gt^2}{2}$ y $y_B(t)=H-10-\frac{gt^2}{2}$. La función distancia entre $A$ y 		$B$ vendrá dada por
+	$$d_{AB}(t)=|y_A(t)-y_B(t)|=\left|H-\frac{gt^2}{2}-(H-10-\frac{gt^2}{2}) \right|=10$$
+	La distancia permanece constantemente igual a 10. Nótese que se considera el movimiento de ambos objetos desde que se suelta el objeto $B$ hasta que llega al suelo.
+	
+	\item Un automóvil Porsche acelera uniformemente de $80,5 km/h$ en el instante $t=0$ hasta $113 km/h$ en $t=9s$. (a) ¿Qué gráfico de la figura 2.32 representa mejor el gráifco velocidad-tiempo? (b) Obtén las ecuaciones de la velocidad y posición en función del tiempo, suponiendo que en $t=0$ su posición es $x=0$
+
+	\begin{enumerate}
+		\item (c)
+		
+		\item Ecuaciones del movimiento, teniendo en cuenta que el intervalo de tiempo es $[t_0,t_f]=[0,9s]$, la velocidad inicial $v_0=80,5 \text{km/h}=\frac{805}{36} \text{m/s}$, la velocidad final $v_f=113 \text{km/h}=\frac{1130}{36} \text{m/s}$ y la posición inicial $x_0=0$. Deducimos la aceleración
+		$$a=\frac{v_f-v_0}{t_f-t_0}=\frac{\frac{1130}{36}-\frac{805}{36}}{9}=\frac{1130-805}{36 \cdot 9}=\frac{325}{324} \text{m/$s^2$}$$
+		Y las ecuaciones de velocidad y posición son
+		$$\begin{cases}
+		v(t)=\frac{805}{36}+\frac{325}{324}t \\
+		x(t)=\frac{805}{36}t+\frac{325}{648}t^2 
+		\end{cases}$$
+	\end{enumerate}
+
+	\item Un objeto cae, partiendo del reposo, y recorre una distancia $D$ en un tiempo $T$. Si el tiempo de la caída fuera el doble, $2T$: (a) ¿cuál será la distancia recorrida desde su posición inicial?, (b) ¿cuál será su velocidad?, y (c) ¿cuál será su aceleración? (Despreciar la resistencia del aire).
+
+	\textbf{Respuesta}
+
+	Las ecuaciones del movimiento del enunciado son las de caída libre con datos iniciales $y_0=H$, $v_0=0$ e $y(T)=H-D$ son
+		$$\begin{cases}
+		v(t)=-gt \\
+		y(t)=H-\frac{1}{2}gt^2
+		\end{cases}$$
+
+	\begin{enumerate}
+		\item Usando la condición inicial podemos obtener $T$ en función de $D$.
+		$$y(T)=H-D \Rightarrow H-\frac{gT^2}{2}=H-D \Rightarrow T=\sqrt{\frac{2D}{g}}$$
+		La distancia recorrida desde la posición inicial vendrá dada por $y(0)-y(2T)$. Así
+
+		Si el tiempo de caída fuera el doble, la distancia recorrida sería cuatro veces más, esto es, $4D$.
+
+		\item La velocidad para el tiempo de caída doble vendrá dada por
+		$$v(2T)=-g \sqrt{\frac{8D}{g}}=-\sqrt{8gD}$$
+
+		\item La aceleración permanece constante, $a=-g$, al ser un movimiento de caída libre.
+	\end{enumerate}
+
+	\item (*) En un determinado instante de una carrera, dos caballos corren uno junto al otro en la misma dirección (la dirección $+x$). La velocidad y la aceleración instantánea del caballo $A$ son $+10$m/s y +$2 m/s^2$, respectivamente, y la velocidad y la aceleración instantánea del caballo $B$ son $+12$m/s y $-1m/s^2$, respectivamente. ¿Cuál de los dos caballos está adelantando al otro? Explique la respuesta.
+
+	\textbf{Respuesta}
+	
+		Sean $a_i(t), v_i(t), x_i(t)$ las ecuaciones de aceleración, velocidad y posición para el caballo $i=A,B$. Debemos comparar las posiciones de los caballos $A$ y $B$ en un intervalo de tiempo anterior al 		instante $t_0$ considerado en el enunciado, digamos $T_-=(t_0-\delta,t_0)$ con $\delta >0$.  Si $x_A(t)<x_B(t)$ para $t \in T_-$, entonces el caballo $A$ adelanta al $B$; en cambio, si $x_B(t)<x_A(t)$ para $t \in T_-$, entonces el caballo $B$ adelanta al $A$. Por el enunciado, sabemos que $x_A(t_0)=x_B(t_0)$. Estudiemos los límites (existen y cumplen la igualdad mostrada a continuación por que $v_A(t_0)$ y $v_B(t_0)$ tienen un valor finito).
+		$$v_A(t_0)=x_A'(t_0)=\lim_{t \to t_0^-} \frac{x_A(t)-x_A(t_0)}{t-t_0}$$
+		$$v_B(t_0)=x_B'(t_0)=\lim_{t \to t_0^-} \frac{x_B(t)-x_B(t_0)}{t-t_0}$$
+		Restando, y teniendo en cuenta que $x_A(t_0)=x_B(t_0)$ por el enunciado:
+		$$(-2=10-12)=v_A(t_0)-v_B(t_0)=\lim_{t \to t_0^-} \frac{x_A(t)-x_B(t)}{t-t_0}<0 \quad \text{$t \to t_0^- \Rightarrow t-t_0 \to 0^-$}$$
+		Podemos deducir, que existe $\delta >0$ tal que 
+		$$x_A(t)-x_B(t)>0 \quad \forall t \in (t_0-\delta,t_0) \Rightarrow x_A(t)>x_B(t) \quad \forall t \in (t_0-\delta,t_0)$$
+		Por tanto, \textbf{el caballo $B$ adelanta al caballo $A$}.
+
+	\item Verdadero o falso: (a) La ecuación $x-x_0=v_0t+\frac{1}{2}at^2$ es válida para todo movimiento de partículas en una dimensión. (b) Si la velocidad en un instante determinado es cero, la aceleración en dicho instante también debe ser cero. (c) La ecuación $\Delta x=v_m \Delta t$ es válida para todo movimiento en una dimensión.
+
+	\textbf{Respuesta}
+		
+	\begin{enumerate}
+		\item \textbf{Falso}. Es válida para movimientos de aceleración constante solamente.
+
+		\item \textbf{Falso}. Por ejemplo, en un movimiento de caida libre de un objeto lanzado desde el suelo verticalmente hacia arriba, en el instante que alcanza la altura máxima del movimiento la velocidad es cero, pero la aceleración no es nula al valer $-g$.	
+
+		\item \textbf{Verdadero}. Es la fórmula de la velocidad media reescrita de otra manera.
+	\end{enumerate}
+
+	\item (Revisar) Si un objeto se mueve con aceleración constante sobre una línea recta, su velocidad instantánea a la mitad de la distancia recorrida en cualquier intervalo de tiempo es: (a) mayor que su velocidad media, (b) menor que su velocidad media, (c) igual que su velocidad media, (d) la mitad de su velocidad media, (e) dos veces su velocidad media.
+
+	\textbf{Respuesta}
+
+	(a) mayor que su velocidad media. Como la aceleración es constante, las ecuaciones de velocidad y posición son
+	$$\begin{cases}
+		x(t)=x_0+v_0t+\frac{1}{2}at^2 \\
+		v(t)=v_0+at
+	\end{cases}$$
+	Considerando dicho movimiento en el intervalo $[t_i,t_f]$, calculamos la velocidad media en él
+	$$v_m=\frac{x(t_f)-x_(t_i)}{t_f-t_i}=\frac{x_0+v_0t_f+\frac{1}{2}at_f^2-x_0-v_0t_i-\frac{1}{2}at_i^2}{t_f-t_i}=$$
+	$$=\frac{v_0(t_f-t_i)+\frac{1}{2}a(t_f-t_i)(t_f+t_i)}{t_f-t_i}=v_0+\frac{1}{2}a(t_f+t_i)$$
+	Por tanto
+	$$v_m=v_0+\frac{1}{2}a(t_i+t_f)$$
+	Sea $t_m$ el tiempo para el cuál se alcanza la mitad de la distancia recorrida en el intervalo $[t_i,t_f]$, entonces
+	$$x(t_m)=\frac{x(t_i)+x(t_f)}{2}$$
+	Desarrollano esa igualdad
+	$$x_0+v_0t_m+\frac{1}{2}at_m^2=\frac{x_0+v_0t_i+\frac{1}{2}at_i^2+x_0+v_0t_f+\frac{1}{2}at_f^2}{2}$$
+	Es decir
+	$$v_0t_m+\frac{1}{2}at_m^2=\frac{v_0}{2}(t_i+t_f)+\frac{a}{4}(t_i^2+t_f^2)$$
+	Resolviendo para $t_m$
+	$$t_m =\frac{-v_0+\sqrt{v_0^2+a v_0(t_i+t_f)+\frac{a^2}{2}(t_i^2+t_f^2)}}{a}$$
+	Y la velocidad instantánea es ese punto es
+	$$v(t_m)=v_0+at_m=\sqrt{v_0^2+a v_0(t_i+t_f)+\frac{a^2}{2}(t_i^2+t_f^2)}$$
+	Suponiendo $v_0$ y $a$ positivos
+	$$v^2(t_m)-v_m^2=v_0^2+av_0(t_i+t_f)+\frac{a^2}{2}(t_i^2+t_f^2)-\left(v_0^2+\frac{a^2}{4}(t_i+t_f)^2+av_0(t_i+t_f) \right)=$$
+	$$=\frac{a^2}{2}(t_i^2+t_f^2)-\frac{a^2}{4}(t_i^2+t_f^2)=\frac{a^2}{2} \left(t_i^2+t_f^2-\frac{1}{2} (t_i^2+t_f^2+2t_it_f) \right)=$$
+	$$=\frac{a^2}{2}(\frac{t_i^2}{2}+\frac{t_f^2}{2}-t_it_f)=\frac{a^2}{4}(t_i^2+t_f^2-2t_it_f)=\frac{a^2}{4}(t_i-t-f)^2 >0$$
+	Por tanto, $v^2(t_m)>v_m^2$, y tenemos que $v(t_m)>v_m$.
+
+	\item Una tortuga ve cómo su cuidador le pone lechuga fresca al otro lado del terrario. Empieza a acelerar (a ritmo constante) en dirección a la comida a partir del reposo en el tiempo $t=0$. Sea $t_1$ el tiempo en el que la tortuga ha recorrido la mitad de la distancia que la separa de la comida. Obtener una expresión para el cociente $t_2/t_1$, donde $t_2$ es el tiempo que la tortuga invierte en llegar a la comida.
+
+	\textbf{Respuesta}
+	Las ecuación de la posición para la tortuga es
+	$$x(t)=\frac{1}{2}at^2 \quad t \in [0,t_2]$$
+	Y sabemos, si llamamos $D$ a la distancia entre la tortuga y la comida, que $x(t_1)=D/2$ y que $x(t_2)=D$. Por tanto:
+	$$x(t_1)=\frac{1}{2}at_1^2=\frac{D}{2} \quad x(t_2)=\frac{1}{2}at_2^2=D$$
+	Dividiendo ambas igualdades
+	$$\frac{x(t_2)}{x(t_1)}=\frac{\frac{1}{2}at_2^2}{\frac{1}{2}at_1^2}=\frac{D}{D/2} \Rightarrow \left(\frac{t_2}{t_1} \right)^2=2 \Rightarrow \frac{t_2}{t_1}=\sqrt{2}$$
+
+	\item En la figura 2.33...
+
+	\item Un coche que se mueve...
+
+	\item Reginaldo...
+
+	\item De los gráficos...
+
+	\item De los gráficos...
+
+	\item Representar las curvas $v$
+
+	\item En la figura 2.37
+
+	\subsection{Estimaciones y aproximaciones}
+	
 
 \end{enumerate}
 
