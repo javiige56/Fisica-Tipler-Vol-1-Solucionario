@@ -2,6 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage[spanish]{babel}
 \usepackage{enumitem}
+\usepackage{amsmath}
 
 \title{Física Tipler Vol 1 Solucionario}
 \author{Javier Villanueva Gervaso}
@@ -123,9 +124,15 @@
 	
 	\textbf{Respuesta correcta:} Entre 90 y 180 grados.
 
+
 	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $x$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $				\overrightarrow{B}+\overrightarrow{A}$ señale en la dirección positiva del eje $y$.
 
 	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $y$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $				\overrightarrow{B}-\overrightarrow{A}$ señale en la dirección positiva del eje $x$.
+
+	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $x$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $	\overrightarrow{B}+\overrightarrow{A}$ señale en la dirección positiva del eje $y$.
+
+	\item Un vector $\overrightarrow{A}$ señala en la dirección positiva del eje $y$. Mostrar gráficamente tres posibles elecciones para un vector $\overrightarrow{B}$ de forma que $	\overrightarrow{B}-\overrightarrow{A}$ señale en la dirección positiva del eje $x$.
+
 
 	\item (\textbf{Interesante}) ¿Es posible que tres vectores del mismo módulo sumen 0? Si lo es, muestre la respuesta gráficamente. En caso contrario, explique por qué no es posible.
 
@@ -178,7 +185,8 @@
 
 	y queda demostrado que sí es posible que tres vectores del mismo módulo sumen cero.
 
-	\section{Cálculo y aproximaciones}
+	\subsection{Cálculo y aproximaciones}
+
 
 	\item El ángulo subtendido por el diámetro de la Luna en un punto de la Tierra es aproximadamente $\theta=0,524º$. Con este dato, y sabiendo que la Luna dista $384Mm$ de la Tierra, hallar su diámetro. (El ángulo $\theta$ subtenido por la Luna es, 	aproximadamente, igual a $D/r_1$, donde $D$ es el diámetro de la Luna y $r_1$ es la distancia a la misma.)
 
@@ -199,10 +207,100 @@
 	\item En 1989, científicos de la compañia IBM consiguieron mover átomos con un microscopio de barrido de efecto tunel (STM). El público pudo apreciar esta tecnología cuando vio las letras IBM formadas a partir de átomos de xenon sobre una superficie de niquel. Las letras IBM se extendían a una distancia que equivalía a unos 15 átomos de xenon. Si el espacio entre los centros de los átomos de xenon adyacentes es de 5 $nm$ ($5 \times 10^{-9}$m), estimar cuántas veces puede escribirse la palabra "IBM" en una página de 21,6 cm de ancho.
 
 	\textbf{Respuesta}
+
+	Sea $d=5$nm la distancia entre centros. La distancia total de las letras de IBM es $d_{\text{IBM}}=14d=14\cdot 5 \cdot 10^{-9}\text{m}=7 \cdot 10^{-8}m$. Así, el número de veces que se puede escribir la palabra "IBM" en una página de $21,6 \cdot 10^{2}$m es, usando una regla de tres:
+	$$N=\frac{21,6 \cdot 10^{-2}}{7 \cdot 10^{-8}}=3,08 \cdot 10^6 \text{veces}$$
+
+	\item Se ha debatido públicamente con frecuencia cuáles son las consecuencias ambientales de usar pañales desechables o pañales reutilizables de tela. (a) Supóngase que un bebé, desde que nace y hasta los 2,5 años, usa tres pañales al día. Estimar cuántos pañales deshechables se usan cada año en los Estados Unidos. (b) Calcular el volumen de vertedero ocupado por los pañales, suponiendo que $1000$kg de estos residuos ocupan $1 \text{m$^3$}$. (c) Calcular la superficie que ocuparían anualmente estos residuos si se supone que necesitan una profundidad media en el vertedero de $10$m.
+
+	\textbf{Respuesta}
+	Vamos a considerar los siguientes datos
+	\begin{itemize}
+		\item Número de menores de 1,5 años en EEUU (datos del año 2025) $N_{[0;1,5]}=5,5 \cdot 10^6$
+		\item $m_p=35 \cdot 10^{-3} kg$
+
+	\end{itemize}
+
+	\begin{enumerate}
+		\item Hacemos una simplificación. Vamos a considerar solo los bebés que usen pañales todos los días del año, es decir, los de entre 0 y 1,5 años. Sea $N$ el número de pañales deshechables buscado. Así
+		$$N=N_{[0;1,5]} \cdot 3 \cdot 365$$
+		Por tanto
+		$$N=5,5 \cdot 10^6 \cdot 3 \cdot 365=6,0225 \cdot 10^9$$
+		
+		\item  Sea $m_T$ la masa total de los pañales. Se tiene
+		$$m_T=m_p \cdot N=35 \cdot 10^{-3} \cdot 6,0225 \cdot 10^9=2,108 \cdot 10^8$$
+		Y el volumen total ocupado por todos los pañales es, teniendo en cuenta que $1000$kg de estos residuos ocupan $1m^3$
+		$$V_T=\frac{m_T}{1000}=\frac{2,108 \cdot 10^8}{10^3}=2,108 \cdot 10^5 \text{m$^3$}$$
+
+		\item Suponiendo que el contenedor del vertedero tiene una base rectangular, tenemos que la superficie buscada viene dada por
+		$$S=\frac{V_T}{10}=\frac{2,108 \cdot 10^5 m^3}{10 m^2}=2,108 \cdot 10^4m^2$$
+		
+	\end{enumerate}
+
+	\item (a) Estimar cuántos litros de gasolina usan los automóviles cada día en los Estados Unidos y el coste asociado. (b) Si de un barril de crudo se obtienen $73,45$L de gasolina, calcular cuántos barriles de petróleo deben importarse en un año en los Estados Unidos para fabricar la gasolina necesaria para la automoción. ¿Cuántos barriles por día supone esta cifra?
+
+	\textbf{Respuesta}
+
+	\begin{enumerate}
+		\item 
+
+		\item
+	\end{enumerate}
+
+	\item Un megabyte (MB) es una unidad de almacenamiento en la memoria de los ordenadores. Un CD tiene una capacidad de $700$MB y puede almacenar 70 minutos de música de alta calidad. (a) Si una canción típica dura 5 minutos, ¿cuántos megabytes ocupa una canción? (b) Si una página de texto impreso ocupa aproximadamente 5 kilobytes, estimar cuántas novelas se pueden guardar en un CD.
+
+	\textbf{Respuesta}
+	Los datos del enunciado son
+	\begin{itemize}
+		\item Almacenamiento CD, $A=700$MB.
+		\item Tiempo de almacenamiento CD $T=70$ min.
+		\item Tiempo de duración de una canción, $t_c=5$min.
+		\item Almacenamiento página de texto, $A_p= 5 KB$
+	\end{itemize}
 	
+	\begin{enumerate}
+		\item Los cálculo son
+		$$N_c=\frac{A}{t_c}=\frac{70}{5}=14 \text{canciones}$$
+		Y el almacenamiento que ocupa una canción es
+		$$E_c=\frac{700}{14}=50 \text{MB}$$
+		Es decir, $50$ MB por canción.
 
+		\item Veamos cuántas páginas se pueden guardar en total
+		$$N_p=\frac{700}{5 \cdot 10^{-3}}=140000 \text{ páginas}$$
+		Suponiendo que una novela tiene 500 paginas
+		$$N_N=\frac{140000}{500}=280 \text{ novelas}$$
+		Por tanto, se pueden alamcenar $280$ novelas aproximadamente.
+	\end{enumerate}
+	
+	\subsection{Unidades}
 
+	\item Expresar las siguientes magnitudes usando los prefijos que se recogen en la tabla 1.1 y las abreviaturas de la página 5 (tabla 1.1); por ejemplo, $10000 \text{metros} = 10 \text{km}$. (a) $1000000 \text{watts}$, (b) $0,002 \text{gramos}$, (c) $3 \times 10^{-6} \text{metros}$, (d) $30000$ segundos.
 
+	\textbf{Respuesta}
+
+	(a) $1000000 W= 1 MW$, (b) $0,002 g = 2 mg$, (c) $3 \times 10^{-6}m = 3 \mu m$, (d) $30000 s= 30 ks$
+
+	\item Escribir cada una de las siguientes magnitudes sin usar prefijos: (a) $40 \mu W$, (b) $4 ns$, (c) $3 MW$, (d) $25 km$.
+
+	\textbf{Respuesta}
+	
+	(a) $40 \mu W = 40 \times 10^{-6} W$, (b) $4 ns = 4 \times 10^{-9} s$, (c) $3 MW = 3 \times 10^6 W$, (d) $25 km = 25 \times 10^3 m$.
+	
+	\item Escribir las siguientes magnitudes (que no se expresan en unidades del SI) usando prefijos (pero no sus abreviaturas). Por ejemplo, $10^3 metros= 1 kilometro$: (a) $10^{-12}$ abucheos, (b) $10^9$ mugidos, (c) $10^{-6}$ telefonos, (d) $10^{-18}$ chicos, (e) $10^6$ teléfonos, (f) $10^{-9}$ cabras, (g) $10^{12}$ toros.
+
+	\textbf{Respuesta}
+
+	\item (a) $10^{-12}$ abucheos = $1$ picoabucheo, (b) $10^9$ mugidos = $1$ gigamugido, (c) $10^{-6}$ telefonos = $1$ microtelefono, (d) $10^{-18}$ chicos = $1$ atochico, (e) $10^6$ teléfonos = $1$ megateléfono, (f) $10^{-9}$ cabras = $1$ nanocabra, (g) $10^{12}$ toros = $1$ teratoro.
+
+	\item En las ecuaciones siguientes, la distancia $x$ está en metros, el tiempo $t$ en segundos y la velocidad $v$ en metros por segundo. ¿Cuáles son las unidades del SI de las constantes $C_1$ y $C_2$? (a) $x=C_1+C_2t$, (b) $x=\frac{1}{2}C_1t^2$, (c)= $v^2=2C_1x$, (d) $x=C_1\cos C_2t$, (e) $v^2=2C_1v-(C_2x)^2$
+
+	\textbf{Respuesta}
+	
+	(a) $[C_1]=L$, $[C_2]=LT^{-1}$, (b) $[C_1]=LT^{-2}$, (c) $[C_1]=LT^{-3}$, (d) $[C_1]=L$, $[C_2]=T^{-1}$, (e) $[C_1]=LT^{-1}$, $[C_2]=L^2T^{-1}$
+
+	\subsection{Conversión en unidades}
+
+		
 \end{enumerate}
 
 \end{document}
